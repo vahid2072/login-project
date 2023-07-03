@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@media screen and (max-width: 767px) {
+  .left-side-image {
+    display: none;
+  }
+  #main {
+    width: 68%;
+    height: 75%;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+  }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/bg-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+/* our main section has become a row with 2 equal column */
+.row {
+    border-radius: 50px;
+    border: 10px solid #fff;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    width: 70%;
+    height: 73%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+.left-side-image {
+    background-image: url('images/side-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 70vh;
+    width: 100%;
+}
+
+.right-side-image {
+    background-size: 100% 100%;
+    position: absolute;
+    height: 70vh;
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* sign-in button is inside a dive and positioned reletively so it could be colse to first column which contains an image */
+.signIn {
+    position: absolute;
+    top: 5%;
+    left: 49.5%;
+    display: inline-block;
+    width: 70px;
+}
+
+.signIn-btn {
+    background-color: #80508A;
+    color: #ccc;
+    border-radius: 0px 40px 40px 0px;
+    font-size: 14px;
+    height: 60px;
+    border: 1px solid #D68EBA;
+    cursor: pointer;
+    width: 60px;
+}
+
+.signIn-btn:hover {
+    width: 100%;
+    transition: all ease-out 0.5s;
+}
+
+.second-part {
+    display: inline-block;
+    left: 60%;
+    top: 5%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 10px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    left: 20px;
+  }
+  
+  p {
+      font-size: 14px;
+      font-weight: 100;
+      line-height: 15px;
+      letter-spacing: 0.5px;
+      margin: 20px 0 30px;
+      color: #887E7E;
+      position: relative;
+      left: -50px;
+  }
+
+  a {
+      color: #333;
+      font-size: 14px;
+      text-decoration: none;
+      margin: 15px 0;
+  }
+  /*  sign-up button style */
+  .signUp-btn {
+      border: 1px solid #0B6EFE;
+      background-color: #0B6EFE;
+      color: #FFFFFF;
+      font-size: 12PX;
+      font-weight: bold;
+      padding: 12px 45px;
+      width: 80%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: transform 80ms ease-in;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      background: #0B6EFE;
+      border-radius: 10px;
+      color: #FFFFFF;
+      cursor: pointer;
+      line-height: 20px;
+      margin-top: 15px;
+      margin-bottom: -25px;
+  }
+  
+  .signUp-btn:hover {
+      background-color: #0b6cfed1;
+  }
+  
+  .signUp-btn:active {
+      transform: scale(0.95);
+  }
+  
+  .signUp-btn:focus {
+      outline: none;
+  }
+  
+  .signUp-btn.ghost {
+      background-color: transparent;
+      border-color: #FFFFFF;
+  }
+  
+  /* form called siign-up form and it's inputs which are half-input and input, half-input is a stle for 2 inputs that have half of other inputs  */
+  .signUp-form {
+    display: inline-block;
+    position: absolute;
+    left: 55%;
+    top: 18%;
+    width: 50%;
+}
+
+  .input-half {
+    padding: 12px 15px;
+    margin: 8px 10px;
+    width: 37%;
+    display: inline-block;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #FFFFFF;
+    border: 1px solid #887E7E;
+    border-radius: 10px;
+    color: rgba(99, 92, 92, 0.8);
+    line-height: 20px;
+    position: relative;
+    left: -10px;
+    margin-top: 50px;
+  }
+  
+  input {
+      padding: 12px 15px;
+      margin: 8px 0;
+      width: 80%;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      background: #FFFFFF;
+      border: 1px solid #887E7E;
+      border-radius: 10px;
+      color: rgba(99, 92, 92, 0.8);
+      line-height: 20px;
+      margin-top: 15px;
+  }
+  
+  /* login input button and two side lines were styled on blow lines */
+  .login-div {
+    display: block;
+    position: relative;
+    left: -30px;
+  }
+  
+  .linear1 {
+    height: 3px;
+    background: linear-gradient(269.97deg, #0B6EFE 4.18%, rgba(196, 196, 196, 0) 77.28%);
+    display:inline-block;
+    width: 27%;
+    margin: auto;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  input[type = button] {
+    border: none;
+    width: auto;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #030303;
+  }
+
+  input[type = button]:hover {
+    background: #0B6EFE;
+    transition: ease-out 1s;
+    color: #eee;
+  }
+
+  .linear2 {
+    width: 27%;
+    height: 3px;
+    background: linear-gradient(269.97deg, #0B6EFE 4.18%, rgba(196, 196, 196, 0) 77.28%);
+    transform: rotate(-180deg);
+    display: inline-block;
+    margin: auto;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  input[type="password"]::-ms-reveal {
+    display: none;
+  }
+
+  /* social icons and their place have been styles in bottom lines  also eye-slash toggle css is one line down*/
+  .toggle {
+    background: none;
+    border: none;
+    color: #337ab7;
+    font-weight: 600;
+    position: relative;
+    right: 4.75em;
+    top: 0.25em;
+    z-index: 9;
+  }
+
+  .social-logo {
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 15%;
+    width: 50%;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    border: 1px solid pink;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa.fa-eye {
+    border: none;
+}
+
+.fa-facebook {
+  background: #cdc5c5;
+  color: white;
+}
+
+.fa-apple {
+  background: #cdc5c5;
+  color: black;
+}
+
+.fa-google {
+    background: #cdc5c5;
+}
+
+.fa.fa-facebook:before {
+    font-family: "FontAwesome"; 
+    font-size: 28px; 
+    background: #3B5998; /* set the linear gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .fa.fa-apple:before {
+    font-family: "FontAwesome"; 
+    font-size: 28px; 
+    background: black; /* set the linear gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+.fa.fa-google:before {
+    content: "\f1a0"; /* set the content to the Google icon */
+    font-family: "FontAwesome"; 
+    font-size: 28px; 
+    background: linear-gradient(to bottom right, #EA4335, #FBBC05, #EA4335, #34A853,#4285F4, #4285F4); /* set the linear gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
